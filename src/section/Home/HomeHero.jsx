@@ -88,7 +88,7 @@ export default function HomeHero() {
                   <h3 class="font-extrabold text-center text-gray-800 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase book-cover max-sm:font-extrabold mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
                     The Greatest Indian Stories Ever Told
                   </h3>
-                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[14px] max-sm:w-[75%] ">
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[13px] max-sm:w-[75%] ">
                     The Greatest Indian Stories Ever Told is a selection of some
                     of the finest literary short fiction written by Indian
                     writers since the genre came into being in the country in
@@ -139,7 +139,7 @@ export default function HomeHero() {
                   <h3 class="font-Gamiliademo text-center text-yellow-500 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
                     A Case of Indian Marvels
                   </h3>
-                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-white text-base font-CooperHevitt max-sm:text-[10px]  max-sm:w-[75%] w-[90%]">
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-white text-base font-CooperHevitt max-sm:text-[13px]  max-sm:w-[75%] w-[90%]">
                     A Case of Indian Marvels is the first major anthology of
                     short stories by India’s most exciting new writers. The book
                     pulls together the very best work of authors belonging to
