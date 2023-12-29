@@ -88,11 +88,11 @@ export default function HomeHero() {
                   <h3 class="font-extrabold text-center text-gray-800 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase book-cover max-sm:font-extrabold mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
                     The Greatest Indian Stories Ever Told
                   </h3>
-                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[14px] line-clamp-4 max-md:line-clamp-3 max-sm:w-[75%] ">
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[14px] max-sm:w-[75%] ">
                     The Greatest Indian Stories Ever Told is a selection of some
                     of the finest literary short fiction written by Indian
                     writers since the genre came into being in the country in
-                    the late nineteenth century....
+                    the late nineteenth century.
                   </span>
 
                   <div className="flex gap-5 pt-5 max-sm:pt-0">
@@ -118,7 +118,7 @@ export default function HomeHero() {
             </div>
             {/* New card */}
             <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
-              <div className="transition-all ease-in-out duration-200 absolute bg-blue-950 top-0  w-[50%] max-sm:w-[60%] h-full ">
+              <div className="transition-all ease-in-out duration-200 absolute bg-blue-950 max-sm:bg-[#161240] top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img
                     src={caseIndia}
@@ -139,11 +139,11 @@ export default function HomeHero() {
                   <h3 class="font-Gamiliademo text-center text-yellow-500 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
                     A Case of Indian Marvels
                   </h3>
-                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-white text-base font-CooperHevitt max-sm:text-[14px] line-clamp-4 max-md:line-clamp-3 max-sm:w-[75%] w-[90%]">
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-white text-base font-CooperHevitt max-sm:text-[10px]  max-sm:w-[75%] w-[90%]">
                     A Case of Indian Marvels is the first major anthology of
                     short stories by India’s most exciting new writers. The book
                     pulls together the very best work of authors belonging to
-                    the millennial generation and Generation Z....
+                    the millennial generation and Generation Z .
                   </span>
 
                   <div className="flex gap-5 pt-5 max-sm:pt-0">
