@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import { heroright, heroleft, ArrowRightBlack } from "../../assets/icons";
+import { ArrowRight, ArrowRightBlack } from "../../assets/icons";
 import HomeHeroCards from "./HomeHeroCards";
-import Hero from "../NewsEvents/Hero";
 import { works } from "../../components/constants";
 import {
   TheGreatestIndianStoriesEverTold,
   heroBannerImage,
+  caseIndia,
 } from "../../assets/images";
 
 export default function HomeHero() {
@@ -71,7 +71,7 @@ export default function HomeHero() {
                 <div className="w-full h-full flex justify-start items-center">
                   <img
                     src={TheGreatestIndianStoriesEverTold}
-                    className="h-[400px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[380px] max-lg:h-[350px] max-md:h-[300px] max-sm:h-[250px] mr-10 max-md:mr-7 max-sm:mr-2 max-sm:z-50"
+                    className="h-[380px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[300px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
                     alt=""
                   />
                 </div>
@@ -108,6 +108,57 @@ export default function HomeHero() {
                       <span>BUY NOW</span>
                       <img
                         src={ArrowRightBlack}
+                        className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* New card */}
+            <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
+              <div className="transition-all ease-in-out duration-200 absolute bg-blue-950 top-0  w-[50%] max-sm:w-[60%] h-full ">
+                <div className="w-full h-full flex justify-start items-center">
+                  <img
+                    src={caseIndia}
+                    className="h-[350px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[430px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[280px] max-sm:h-[230px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="bg-blue-950  transition-all ease-in-out duration-200 absolute top-0 right-0 z-[1] w-[80%] max-sm:w-[75%] h-full flex justify-end [clip-path:polygon(100%_100%,30%_100%,0%_0%,100%_0%)] ">
+                <div
+                  className="absolute -z-50 h-full w-full flex justify-end bg-cover bg-no-repeat opacity-50"
+                  style={{
+                    backgroundImage: `url(https://c0.wallpaperflare.com/preview/447/78/512/indonesia-raja-ampat-regency-ocean-dark-sky.jpg)`,
+                  }}
+                ></div>
+
+                <div class="w-[85%] max-sm:w-[90%] h-full flex justify-center items-center flex-col space-y-2 p-3 max-sm:p-0">
+                  <h3 class="font-Gamiliademo text-center text-yellow-500 text-5xl 2xl:text-6xl max-xl:text-4xl max-lg:text-2xl max-md:text-xl uppercase mb-5 max-sm:mb-2 max-sm:text-[30px] drop-shadow-[0_5px_5px_rgba(231, 0, 188, 0.5)]">
+                    A Case of Indian Marvels
+                  </h3>
+                  <span class="md:text-lg inline text-center max-sm:text-center max-sm:leading-4 text-white text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 max-sm:w-[75%] w-[90%]">
+                    A Case of Indian Marvels is the first major anthology of
+                    short stories by India’s most exciting new writers. The book
+                    pulls together the very best work of authors belonging to
+                    the millennial generation and Generation Z....
+                  </span>
+
+                  <div className="flex gap-5 pt-5 max-sm:pt-0">
+                    <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-white px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
+                      <span>READ MORE</span>
+                      <img
+                        src={ArrowRight}
+                        className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
+                        alt=""
+                      />
+                    </div>
+                    <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-white px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
+                      <span>BUY NOW</span>
+                      <img
+                        src={ArrowRight}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
                         alt=""
                       />
