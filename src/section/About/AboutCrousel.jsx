@@ -130,7 +130,7 @@ const AboutCrousel = () => {
             </div>
           </div>
           <button
-            className=" gap-7 mt-0 max-md:hidden  bg-black max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  "
+            className=" gap-7 mt-0 max-md:hidden     max-md:p-[3px] p-[3px]  justify- items-center  max-w-[170px]  "
             onClick={() => {
               if (reviews[currentIndex].type === "Book") {
                 navigate(
@@ -149,8 +149,8 @@ const AboutCrousel = () => {
               }
             }}
           >
-            <span className="  max-md:p-2 border-[1px] border-white      flex justify-center items-center text-[20px] font-TimesNewRoman flex-row text-white bg-black  uppercase  p-1 gap-1 max-md:gap-1 max-sm:text-[14px]   max-md:border-[2px] ">
-              <span>READ Here</span>
+            <span className="bg-black text-white max-md:p-2 min-w-[250px] py-4 px-10 text-[20px] max-md:text-[16px]  flex justify-center items-center text-center font-serif">
+              <span>Read Here</span>
               <img
                 src={ArrowRight}
                 className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"

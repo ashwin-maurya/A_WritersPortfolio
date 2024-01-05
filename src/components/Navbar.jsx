@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { navLinks } from "./constants";
 import SideNav from "./SideNav";
 import { AMGautmaBlack, AMGautmaWhite } from "../assets/icons";
-
+import TypeModal from "./TypeModal";
 const Navbar = () => {
   const location = useLocation();
   const [showNav, setNav] = useState(false);
@@ -14,6 +14,9 @@ const Navbar = () => {
     setNav(false);
   }, [location]);
 
+  const changeNav = () => {
+    setshowoption(!showoption);
+  };
   useEffect(() => {
     if (showNav) {
       document.body.style.overflow = "hidden";
@@ -87,20 +90,11 @@ const Navbar = () => {
                       : "border-b-gray-600"
                   }
                    cursor-pointer`}
-                  onMouseEnter={() => {
-                    if (item.label === "Work") {
-                      setshowoption(true);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    setshowoption(false);
-                  }}
                   onClick={() => {
                     if (item.label === "Work") {
-                      setshowoption(true);
+                      changeNav();
                     }
                     if (item.label !== "Work") {
-                      // setshowoption(true);
                       navigate(item.href);
                     }
                   }}
@@ -111,45 +105,10 @@ const Navbar = () => {
                   >
                     {item.label}
                     {showoption && item.label === "Work" && (
-                      <div
-                        className={` ${
-                          location.pathname === "/About" ||
-                          location.pathname.includes("/Book") ||
-                          location.pathname.includes("/Story") ||
-                          location.pathname.includes("/Article")
-                            ? "text-black"
-                            : ""
-                        }  p-2 2xl:text-[22px] max-lg:text-[18px] max-lg:top-[26px] space-y-3 py-3 flex top-[20px] 2xl:top-[32.4px] w-32 max-lg:py-2  max-lg:space-y-1 max-lg:w-28 flex-col left-0 bg-white border-gray-400 absolute`}
-                      >
-                        <span
-                          onClick={() => {
-                            navigate("/Work/Non-Fiction");
-                            setcurrentLoc("Non-Fiction");
-
-                            setshowoption(false);
-                          }}
-                          className={` ${
-                            currentLoc === "Non-Fiction" &&
-                            "border-b-[1px]  border-black"
-                          } `}
-                        >
-                          Non-Fiction
-                        </span>
-                        <span
-                          onClick={() => {
-                            navigate("/Work/Fiction");
-                            setcurrentLoc("Fiction");
-                            setshowoption(false);
-                          }}
-                          className={` ${
-                            currentLoc === "Fiction" &&
-                            "border-b-[1px] w-[60%] border-black"
-                          } `}
-                        >
-                          {" "}
-                          Fiction
-                        </span>
-                      </div>
+                      <TypeModal
+                        changeNav={changeNav}
+                        setcurrentLoc={setcurrentLoc}
+                      ></TypeModal>
                     )}
                   </div>
                 </li>

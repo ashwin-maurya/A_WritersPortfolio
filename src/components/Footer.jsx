@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex max-lg:flex-col">
             <div className="max-lg:my-5 max-lg:mb-10 w-[60%] max-lg:w-full">
               <div className=" w-[70%] my-2 max-lg:w-[90%] max-sm:w-full">
-                <h1 class="text-xl my-1 font-bold mb-3 text-center max-sm:mb-0 font-CooperHevitt 2xl:text-2xl ">
+                <h1 className="text-xl my-1 font-bold mb-3 text-center max-sm:mb-0 font-CooperHevitt 2xl:text-2xl ">
                   Susbcribe to our Newsletter
                 </h1>
                 <div className="relative">

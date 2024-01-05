@@ -13,16 +13,16 @@ const HomeHeroCards = ({ story }) => {
         <div
           className={`bg-gray-800 transition-all ease-in-out duration-200 opacity-80 max-sm:opacity-70 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
         >
-          <div class="w-[74%] max-sm:w-[80%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3 ">
+          <div className="w-[74%] max-sm:w-[80%] h-full flex justify-center items-center flex-col text-left space-y-2 p-3 ">
             <div className="ml-10 max-sm:ml-0">
               <span className="bg-white px-2 py-1 max-sm:pb-[5px] max-sm:pt-1 uppercase font-Oswald text-xs text-black font-bold my-2 tracking-widest">
                 short story
               </span>
-              <h3 class="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-3xl my-8 max-sm:mb-1">
+              <h3 className="font-black font-Gamiliademo tracking-wider text-white 2xl:text-4xl text-4xl max-lg:text-3xl max-md:text-3xl my-8 max-sm:mb-1">
                 {story?.title}
               </h3>
 
-              <p class=" text-gray-50 text-base 2xl:text-lg mt-5 max-sm:text-[14px] font-montserrat tracking-wide">
+              <p className=" text-gray-50 text-base 2xl:text-lg mt-5 max-sm:text-[14px] font-montserrat tracking-wide">
                 {story?.description.length > maxCharacters
                   ? story?.description.substring(0, maxCharacters) + "..."
                   : story?.description}

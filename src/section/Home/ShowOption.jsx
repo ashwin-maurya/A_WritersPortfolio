@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 const ShowOption = () => {
   const navigate = useNavigate();
   return (
-    <section className="my-20 max-md:my-14 ">
+    <section className="my-20 max-md:my-20   ">
       <div className="text-center max-md:text-[29px] max-md:mx-10  text-[43px] font-Gamiliademo py-10 max-md:py-6 max-md:leading-9">
         What Would You Like To Read ?
       </div>

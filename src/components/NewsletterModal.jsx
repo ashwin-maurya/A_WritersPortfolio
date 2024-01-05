@@ -43,11 +43,11 @@ export default function NewsletterModal(props) {
           </div>
 
           <div className="py-20 max-lg:w-full w-[55%] flex justify-center flex-col items-center">
-            <div class=" max-sm:w-full mx-5 hidden max-md:block px-2">
-              <h1 class="text-center text-5xl 2xl:text-6xl font-bold font-CooperHevitt">
+            <div className=" max-sm:w-full mx-5 hidden max-md:block px-2">
+              <h1 className="text-center text-5xl 2xl:text-6xl font-bold font-CooperHevitt">
                 Newsletter
               </h1>
-              <p class="text-center 2xl:text-xl mt-2  font-montserrat">
+              <p className="text-center 2xl:text-xl mt-2  font-montserrat">
                 Stay up to date with Aditya's latest Reads and News
               </p>
             </div>

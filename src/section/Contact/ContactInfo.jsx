@@ -4,7 +4,7 @@ export default function ContactInfo() {
   return (
     <>
       <div className="max-sm:mt-5 max-lg:flex flex-col justify-center items-center max-lg:mb-10">
-        <h1 class="text-5xl max-sm:text-3xl 2xl:text-6xl font-Oswald mb-5">
+        <h1 className="text-5xl max-sm:text-3xl 2xl:text-6xl font-Oswald mb-5">
           Contact Info
         </h1>
 

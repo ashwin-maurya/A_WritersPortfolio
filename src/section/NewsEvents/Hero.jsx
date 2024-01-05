@@ -29,12 +29,12 @@ export default function Hero() {
               }}
             ></div>
 
-            <div class="w-[75%] max-sm:w-[80%] h-full flex justify-center items-center flex-col space-y-2 p-3">
-              <h3 class="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-[20px] uppercase book-cover max-sm:font-extrabold">
+            <div className="w-[75%] max-sm:w-[80%] h-full flex justify-center items-center flex-col space-y-2 p-3">
+              <h3 className="font-black text-gray-800 text-6xl 2xl:text-7xl max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-sm:text-[20px] uppercase book-cover max-sm:font-extrabold">
                 The Greatest Indian Stories Ever Told
               </h3>
               <div>
-                <span class="md:text-lg inline text-right max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 ">
+                <span className="md:text-lg inline text-right max-sm:text-center max-sm:leading-4 text-gray-800 text-base font-CooperHevitt max-sm:text-[10px] line-clamp-4 max-md:line-clamp-3 ">
                   The Greatest Indian Stories Ever Told is a selection of some
                   of the finest literary short fiction written by Indian writers
                   since the genre came into being in the country in the late

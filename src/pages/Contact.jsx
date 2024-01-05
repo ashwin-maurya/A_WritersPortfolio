@@ -4,8 +4,8 @@ import ContactInfo from "../section/Contact/ContactInfo";
 export default function Contact() {
   return (
     <>
-      <section class="flex w-full h-full max-lg:flex-col justify-center items-center  p-10 max-sm:p-0">
-        <div class="w-[40%] max-lg:w-full ">
+      <section className="flex w-full h-full max-lg:flex-col justify-center items-center  p-10 max-sm:p-0">
+        <div className="w-[40%] max-lg:w-full ">
           <ContactInfo />
         </div>
 
