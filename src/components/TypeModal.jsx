@@ -21,7 +21,7 @@ export default function TypeModal({ changeNav, setcurrentLoc }) {
 
       <div
         id="dropdownAvatarName "
-        className="z-[999999] font-poppins block absolute left-0 top-8 bg-white divide-y divide-gray-100 rounded-sm shadow-sm w-48 dark:bg-darkBgPrimary  border "
+        className="z-[999999] font-poppins block absolute left-0 top-8 bg-white divide-y divide-gray-100 rounded-sm shadow-sm w-36 dark:bg-darkBgPrimary  border "
       >
         <ul
           className="py-2 text-base 2xl:text-lg text-gray-700 "
