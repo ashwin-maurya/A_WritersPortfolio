@@ -39,11 +39,17 @@
   src: local("AGaramondPro-Regular"),
     url(./fonts/AGaramondPro-Regular.otf) format("opentype");
 }
+@font-face {
+  font-family: "HankenGrotesk-VariableFont_wght";
+  src: local("HankenGrotesk-VariableFont_wght"),
+    url(./fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;

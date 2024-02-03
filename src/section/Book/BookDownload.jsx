@@ -1,6 +1,5 @@
 import React from "react";
 import { Download2 } from "../../assets/images";
-import { Download } from "../../assets/icons";
 
 const BookDownload = () => {
   return (

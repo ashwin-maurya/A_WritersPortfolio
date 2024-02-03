@@ -1,5 +1,4 @@
 import React from "react";
-import { Articlehero, cover1 } from "../../assets/images";
 
 const ArticleHero = () => {
   return (

@@ -8,7 +8,12 @@ const HomeHeroCards = ({ story }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center scroll-smooth overflow-hidden">
+    <div
+      className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center scroll-smooth overflow-hidden"
+      onClick={() => {
+        navigate(`/Story/${story?.title.replace(/\s+/g, "-")}`);
+      }}
+    >
       <div className="w-full bg-black h-full flex flex-row group text-center scroll-smooth relative  overflow-hidden">
         <div
           className={`bg-gray-800 transition-all ease-in-out duration-200 opacity-80 max-sm:opacity-70 z-[1] w-[80%] h-full  [clip-path:polygon(0%_0%,65%_0%,100%_100%,0%_100%)]`}
@@ -22,11 +27,19 @@ const HomeHeroCards = ({ story }) => {
                 {story?.title}
               </h3>
 
-              <p className=" text-gray-50 text-base 2xl:text-lg mt-5 max-sm:text-[14px] font-montserrat tracking-wide">
+              <p className=" text-gray-50 text-base line-clamp-4 2xl:text-lg mt-5 max-sm:text-[14px] font-montserrat tracking-wide">
                 {story?.description.length > maxCharacters
                   ? story?.description.substring(0, maxCharacters) + "..."
                   : story?.description}
               </p>
+              <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[160px] mt-2 flex justify-center items-center flex-row text-white px-2 py-1 border-2  gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
+                <span>READ MORE</span>
+                <img
+                  src={ArrowRight}
+                  className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>

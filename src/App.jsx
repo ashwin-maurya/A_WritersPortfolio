@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
 import Work from "./pages/Work";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
@@ -25,11 +24,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Work/:type" element={<Work />} />
-          <Route path="/News&Events" element={<NewsEvents />} />
+          <Route path="/Press&Events" element={<NewsEvents />} />
           <Route path="/Book/:book" element={<SingleBookLayout />} />
           <Route path="/Article/:article" element={<SingleArticleLayout />} />
           <Route path="/Story/:story" element={<SingleStoryLayout />} />
-          <Route path="/About" element={<About></About>} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer></Footer>

@@ -1,6 +1,5 @@
 import React from "react";
 import { goto } from "../../assets/icons";
-import { article2 } from "../../assets/images";
 import DOMPurify from "dompurify";
 
 const StoryBody = ({ storydata }) => {

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { works } from "../../components/constants";
 import { ArrowRight } from "../../assets/icons";
 import { useNavigate } from "react-router";
-import { Articlehero, Bookcover } from "../../assets/images";
 
 const AboutCrousel = () => {
   const [reviews, setReviews] = useState(works);
@@ -53,7 +52,6 @@ const AboutCrousel = () => {
               }}
             >
               <img
-                // src={Articlehero}
                 src={reviews[currentIndex]?.cover}
                 alt=""
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
@@ -72,7 +70,6 @@ const AboutCrousel = () => {
             >
               <img
                 src={reviews[currentIndex].cover}
-                // src={reviews[currentIndex]?.cover}
                 alt=""
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
               />
@@ -106,14 +103,6 @@ const AboutCrousel = () => {
                   className=" w-[500px]   max-md:w-full  opacity-70"
                 />
               </div>
-              {/* <div className=" z-50 absolute max-md:left-3  w-[75%]  left-9 bottom-12 flex flex-col  max-md:bottom-7  gap-24  max-md:gap-20 max-md:w-[85%]">
-                <div className="tracking-widest  text-yellow-400 uppercase font-Gamiliademo max-md:text-[18px]  text-[28px] text-center   ">
-                  {reviews[currentIndex]?.title}
-                </div>
-                <div className="tracking-widest  text-yellow-500 uppercase font-Authorfont text-[20px]  font-light max-md:text-[14px] text-center ">
-                  By A.M. Gautam
-                </div>
-              </div> */}
             </section>
           )}
         </div>

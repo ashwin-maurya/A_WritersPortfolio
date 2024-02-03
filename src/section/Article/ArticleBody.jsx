@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Articlehero, article2, article3 } from "../../assets/images";
 import DOMPurify from "dompurify";
+import React from "react";
 import { goto } from "../../assets/icons";
 
 const ArticleBody = ({ articledata }) => {

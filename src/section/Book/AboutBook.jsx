@@ -1,12 +1,11 @@
 import React from "react";
-import { Bookcover, cover1, cover3 } from "../../assets/images";
 
 const AboutBook = ({ bookdetails }) => {
   console.log(bookdetails?.title);
   return (
     <>
       <div className=" text-[56px] tracking-wider font-Gamiliademo text-center max-md:my-9 max-md:text-[30px] max-md:w-[90%]  mx-auto max-md:leading-9 mt-24">
-        {bookdetails?.title}
+        {bookdetails?.title.split(":")[0].trim()}
       </div>
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className=" bg-slate-200  md:pl-10  lg:pl-16 lg:ml-14 p-6 pl-36 xl:ml-36    w-[50%]   ">

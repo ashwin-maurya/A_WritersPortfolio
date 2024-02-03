@@ -1,5 +1,5 @@
 import React from "react";
-import { Fictionimg, nonFiction, nonFictionimg } from "../../assets/images";
+import { Fictionimg, nonFictionimg } from "../../assets/images";
 import { useNavigate } from "react-router";
 
 const ShowOption = () => {

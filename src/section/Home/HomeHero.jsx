@@ -7,12 +7,12 @@ import {
   heroBannerImage,
   caseIndia,
 } from "../../assets/images";
-
+import { useNavigate } from "react-router-dom";
 export default function HomeHero() {
   const slidesContainerRef = useRef(null);
   const [slideWidth, setSlideWidth] = useState(0);
   const [direction, setDirection] = useState(1);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const updateSlideWidth = () => {
       setSlideWidth(
@@ -66,7 +66,12 @@ export default function HomeHero() {
             ref={slidesContainerRef}
             className="slides-container z-[999] h-[400px] 2xl:h-[500px] max-sm:h-[350px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-4 max-sm:space-x-0 rounded max-md:rounded-none scroll-smooth no-scrollbar"
           >
-            <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
+            <div
+              className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden cursor-pointer"
+              onClick={() => {
+                navigate(`/Book/The-Greatest-Indian-Stories-Ever-Told`);
+              }}
+            >
               <div className="transition-all ease-in-out duration-200 absolute bg-pink-200 top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img
@@ -117,7 +122,14 @@ export default function HomeHero() {
               </div>
             </div>
             {/* New card */}
-            <div className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden">
+            <div
+              className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden cursor-pointer"
+              onClick={() => {
+                navigate(
+                  `/Book/A-Case-of-Indian-Marvels:-Dazzling-Stories-from-the-Country’s-Finest-New-Writers`
+                );
+              }}
+            >
               <div className="transition-all ease-in-out duration-200 absolute bg-blue-950 max-sm:bg-[#161240] top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img

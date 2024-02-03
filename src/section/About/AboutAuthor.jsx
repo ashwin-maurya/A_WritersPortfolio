@@ -1,5 +1,4 @@
 import React from "react";
-import { RandomPerson } from "../../assets/images";
 
 export default function AboutAuthor() {
   return (

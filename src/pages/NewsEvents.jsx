@@ -1,15 +1,22 @@
 import React from "react";
-import { campaign1, campaign2 } from "../assets/images";
-import { ArrowRightBlack } from "../assets/icons";
+
 import Hero from "../section/NewsEvents/Hero";
 import Cards from "../section/NewsEvents/Cards";
+import { Helmet } from "react-helmet";
 export default function NewsEvents() {
   return (
-    <section>
+    <>
+      <Helmet>
+        <title>Press & News | A Gautam</title>
+        <meta
+          name="description"
+          content="Contact A.M. Gautam on his mail. Feedbacks, reviews, questions, interviews everything. Just hop on."
+        />
+      </Helmet>
       <div className="grid">
         <Hero />
       </div>
       <Cards />
-    </section>
+    </>
   );
 }

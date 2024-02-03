@@ -15,6 +15,7 @@ export default {
         Mont: ["Mont-ExtraLightDEMO", "sans-serif"],
         Slabo: ["Slabo27px-Regular", "sans-serif"],
         AGaramondProRegular: ["AGaramondPro-Regular", "sans-serif"],
+        HankenGrotesk: ["HankenGrotesk-VariableFont_wght", "sans-serif"],
       },
     },
   },

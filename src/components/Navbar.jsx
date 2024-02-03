@@ -81,14 +81,14 @@ const Navbar = () => {
                   className={`relative px-2 ${
                     (location.pathname === "/" && item.href === "/home") ||
                     location.pathname.includes(item.href)
-                      ? "border-b-[1px] "
+                      ? "border-b-[1px] border-black"
                       : ""
                   }
                   ${
                     location.pathname === "/About"
                       ? "border-b-white"
                       : "border-b-gray-600"
-                  }
+                  }f
                    cursor-pointer`}
                   onClick={() => {
                     if (item.label === "Work") {

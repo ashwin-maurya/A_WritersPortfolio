@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import SingleStoryPage from "../pages/SingleStoryPage";
 import { useParams } from "react-router";
 import { storyCover } from "../components/constants";
-
+import { Helmet } from "react-helmet";
 const SingleStoryLayout = () => {
   const { story } = useParams();
-  // console.log(book);
   const [cover, setcover] = useState({});
 
   useEffect(() => {
@@ -14,9 +13,16 @@ const SingleStoryLayout = () => {
         return story === storycover.title.replace(/\s+/g, "-");
       })
     );
-    console.log(cover);
-  }, [storyCover]);
-  return <SingleStoryPage storydata={cover[0]}></SingleStoryPage>;
+  }, [story]);
+  return (
+    <>
+      <Helmet>
+        <title>{`${cover[0]?.title} | Story | A.M. Gautam`}</title>
+        <meta name="description" content={cover[0]?.shortDescription} />
+      </Helmet>{" "}
+      <SingleStoryPage storydata={cover[0]}></SingleStoryPage>
+    </>
+  );
 };
 
 export default SingleStoryLayout;

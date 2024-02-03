@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import SingleBookPage from "../pages/SingleBookPage";
 import { useParams } from "react-router";
 import { covers } from "../components/constants";
+import { Helmet } from "react-helmet";
 const SingleBookLayout = () => {
   const { book } = useParams();
-  // console.log(book);
   const [cover, setcover] = useState({});
 
   useEffect(() => {
@@ -13,10 +13,17 @@ const SingleBookLayout = () => {
         return book === bookcover.title.replace(/\s+/g, "-");
       })
     );
-    console.log(cover);
-  }, [covers]);
+  }, [book]);
 
-  return <SingleBookPage bookdetails={cover[0]}></SingleBookPage>;
+  return (
+    <>
+      <Helmet>
+        <title>{`${cover[0]?.title} | Book | A.M. Gautam`}</title>
+        <meta name="description" content={cover[0]?.shortDescription} />
+      </Helmet>
+      <SingleBookPage bookdetails={cover[0]}></SingleBookPage>;
+    </>
+  );
 };
 
 export default SingleBookLayout;

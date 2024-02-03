@@ -2,35 +2,25 @@ import {
   Articlehero,
   Bookcover,
   IntotheNight,
-  ManinaLittleTown,
   TheShadowTeacher,
   UpsideDown,
-  book1,
-  book2,
-  book3,
-  book4,
-  book5,
   fiftyninetimesbutone,
   inDefenseOfMoonlight,
   peril,
   story1,
   story2,
-  story3,
   story4,
   story5,
   story6,
-  salmanRushidie,
   caseIndia,
   TheLibrary,
   SalmanRushdie,
 } from "../../assets/images";
-import { cover1, cover3, cover4, cover5 } from "../../assets/images";
 
 export const navLinks = [
   { href: "/home", label: "Home" },
   { href: "/Work", label: "Work" },
-  { href: "/About", label: "About" },
-  { href: "/News&Events", label: "News & Events" },
+  { href: "/Press&Events", label: "Pess & Events" },
   { href: "/Contact", label: "Contact" },
 ];
 

@@ -1,17 +1,12 @@
 import React from "react";
-import { ArrowRightBlack, Cart, Download } from "../../assets/icons";
+import { ArrowRightBlack, Cart } from "../../assets/icons";
 import { useNavigate } from "react-router";
-import { Bookcover } from "../../assets/images";
 
 const Books = ({ BookData }) => {
   const navigate = useNavigate();
 
   return (
     <article>
-      {/* <div className="text-center text-[29px] pt-4 max-md:text-[23px] max-md:pb-3 pb-12 font-[100] font-CooperHevitt   border-black">
-        BOOKS
-      </div> */}
-
       <div className=" flex flex-col mx-28 max-md:gap-24  gap-36  max-md:mx-0 justify-center  items-center max-md:my-6  ">
         {BookData?.map((singleBook, index) => (
           <div
@@ -44,9 +39,7 @@ const Books = ({ BookData }) => {
               <span
                 className="2xl:text-[38px] text-[34px]  max-md:hidden   max-md:text-[20px]  uppercase text-gray-800 font-Oswald max-md:leading-7 max-md:mb-2"
                 onClick={() => {
-                  navigate(
-                    `/Article/${singleBook?.title.replace(/\s+/g, "-")}`
-                  );
+                  navigate(`/Book/${singleBook?.title.replace(/\s+/g, "-")}`);
                 }}
               >
                 {singleBook?.title}

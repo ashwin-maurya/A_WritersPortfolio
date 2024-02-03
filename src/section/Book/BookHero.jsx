@@ -1,7 +1,7 @@
 import React from "react";
-import { cover1, Bookhero } from "../../assets/images";
+import { Bookhero } from "../../assets/images";
 
-const BookHero = ({ bookdetails }) => {
+const BookHero = () => {
   return (
     <div className="h-72   relative flex  bg-black justify-center max-sm:h-52 items-end ">
       <img

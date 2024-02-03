@@ -10,7 +10,7 @@ export default function NewsletterCard() {
         style={{
           fontSize: "25px !important",
         }}
-        frameborder="0"
+        frameBorder="0"
       ></iframe>
     </>
   );
