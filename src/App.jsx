@@ -23,7 +23,13 @@ const App = () => {
       <ScrollToTop />
       <main className=" container select-none">
         <Navbar />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className="flex justify-center  h-40 items-center my-20">
+              <div class="shapes-5 "></div>
+            </div>
+          }
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Home" element={<Home />} />
