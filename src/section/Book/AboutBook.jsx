@@ -1,7 +1,6 @@
 import React from "react";
 
 const AboutBook = ({ bookdetails }) => {
-  console.log(bookdetails?.title);
   return (
     <>
       <div className=" text-[56px] tracking-wider font-Gamiliademo text-center max-md:my-9 max-md:text-[30px] max-md:w-[90%]  mx-auto max-md:leading-9 mt-24">

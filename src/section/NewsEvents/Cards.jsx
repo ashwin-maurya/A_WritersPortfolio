@@ -16,21 +16,17 @@ export default function Cards() {
               target="_blank"
               className="cursor-pointer"
             >
-              <h5 className="italic font-CooperHevitt text-xl my-1">
+              <h5 className="italic font-CooperHevitt text-xl my-1 font-bold">
                 by Defenestrationism.net
               </h5>
             </a>
-            <p className="mb-4 font-montserrat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              laborum suscipit doloremque, expedita voluptatum maiores corporis
-              modi assumenda esse consectetur error nulla, vero alias.
-            </p>
+
             <a
               href="https://defenestrationism.net/announcing-the-winners-of-the-2020-short-story-contest/"
               target="_blank"
               className="cursor-pointer"
             >
-              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black mt-5">
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}
@@ -48,11 +44,6 @@ export default function Cards() {
             <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize">
               Longlisted for the 2022 TFA Award in Creative writing
             </h1>
-            <p className="mb-4 font-montserrat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              laborum suscipit doloremque, expedita voluptatum maiores corporis
-              modi assumenda esse consectetur error nulla, vero alias.
-            </p>
           </div>
         </div>
 
@@ -62,17 +53,13 @@ export default function Cards() {
             <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize">
               Longlisted for the 2024 TFA Award in Creative Writing
             </h1>
-            <p className="mb-4 font-montserrat">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              laborum suscipit doloremque, expedita voluptatum maiores corporis
-              modi assumenda esse consectetur error nulla, vero alias.
-            </p>
+
             <a
               href="https://totofundsthearts.org/awards/creative-writing-in-english"
               target="_blank"
               className="cursor-pointer"
             >
-              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black  mt-5">
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}
@@ -94,9 +81,12 @@ export default function Cards() {
               target="_blank"
               className="cursor-pointer"
             >
+              <h2 className="font-CooperHevitt text-2xl font-semibold mb-2">
+                AI & writing{" "}
+              </h2>
               <h3 className="font-CooperHevitt text-2xl mb-2">
-                AI & writing Part 1: Four authors on why human writing is
-                unlikely to be replaced by LLM-based predictive writing
+                <b> Part 1:</b> Four authors on why human writing is unlikely to
+                be replaced by LLM-based predictive writing
               </h3>
             </a>
             <a
@@ -104,7 +94,7 @@ export default function Cards() {
               target="_blank"
               className="cursor-pointer"
             >
-              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black  mt-2">
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}
@@ -118,9 +108,9 @@ export default function Cards() {
               target="_blank"
               className="cursor-pointer"
             >
-              <h3 className="font-CooperHevitt text-2xl mb-2 mt-10">
-                2. AI & writing Part 2: A failed ChatGPT experiment and a few
-                glad authors
+              <h3 className="font-CooperHevitt text-2xl mb-2 mt-8">
+                <b> Part 2:</b> A failed ChatGPT experiment and a few glad
+                authors
               </h3>
             </a>
             <a
@@ -128,7 +118,7 @@ export default function Cards() {
               target="_blank"
               className="cursor-pointer"
             >
-              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black  mt-2">
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}

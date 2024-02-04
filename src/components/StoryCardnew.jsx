@@ -4,7 +4,6 @@ import { ArrowRight, ArrowRightBlack } from "../assets/icons";
 
 const StoryCardnew = ({ ind }) => {
   const navigate = useNavigate();
-  console.log(ind);
   return (
     <section className="w-[80%] max-md:w-[95%] max-md:gap-8 my-16 max-md:my-8 flex items-center flex-col gap-12 ">
       <span

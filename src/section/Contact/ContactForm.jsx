@@ -27,14 +27,12 @@ export default function ContactForm() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           toast.success("Message sent successfully!");
 
           // Set the last submission time in localStorage
           localStorage.setItem("lastSubmissionTime", Date.now());
         },
         (error) => {
-          console.log(error.text);
           toast.error("Failed to send message. Please try again later.");
         }
       );

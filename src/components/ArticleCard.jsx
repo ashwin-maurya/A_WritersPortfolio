@@ -4,7 +4,6 @@ import { useNavigate } from "react-router";
 
 const ArticleCard = ({ art }) => {
   const navigate = useNavigate();
-  console.log(art);
   return (
     <div key={2} className="max-md:flex-col flex w-full">
       <div

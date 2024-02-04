@@ -7,7 +7,6 @@ import { articles, covers, storyCover } from "../components/constants";
 import { Helmet } from "react-helmet";
 export default function Work() {
   const { type } = useParams();
-  console.log(type);
   const navigate = useNavigate();
   const Bookref = useRef(null);
   const Articleref = useRef(null);

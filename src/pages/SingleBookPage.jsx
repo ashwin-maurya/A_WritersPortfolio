@@ -6,7 +6,6 @@ import Testimonials from "../section/Book/Testimonials";
 import Synopsis from "../section/Book/Synopsis1";
 
 const SingleBookPage = ({ bookdetails }) => {
-  console.log(bookdetails);
   return (
     <section className="bg-slate-50 max-md:pb-10 pb-20">
       <BookHero></BookHero>
