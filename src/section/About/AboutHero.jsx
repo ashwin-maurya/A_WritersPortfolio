@@ -5,6 +5,7 @@ export default function AboutHero() {
     <>
       <div className="h-80 max-lg:h-60 relative flex  bg-black justify-center max-sm:h-52 items-end ">
         <img
+          loading="lazy"
           src={Aboutimg}
           alt="AboutTopImg"
           className="object-cover object-bottom w-full h-full opacity-60"

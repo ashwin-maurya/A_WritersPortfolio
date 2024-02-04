@@ -1,17 +1,20 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Work from "./pages/Work";
 import ScrollProgress from "./components/ScrollProgress";
 import Footer from "./components/Footer";
-import SingleBookLayout from "./Layout/SingleBookLayout";
-import NewsEvents from "./pages/NewsEvents";
-import SingleArticleLayout from "./Layout/SingleArticleLayout";
 import ScrollToTop from "./components/ScrollToTop";
-import SingleStoryLayout from "./Layout/SingleStoryLayout";
 import NewsletterFixed from "./components/NewsletterFixed";
+
+// Lazy-loaded components
+const Home = lazy(() => import("./pages/Home"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Work = lazy(() => import("./pages/Work"));
+const SingleBookLayout = lazy(() => import("./Layout/SingleBookLayout"));
+const NewsEvents = lazy(() => import("./pages/NewsEvents"));
+const SingleArticleLayout = lazy(() => import("./Layout/SingleArticleLayout"));
+const SingleStoryLayout = lazy(() => import("./Layout/SingleStoryLayout"));
+
 const App = () => {
   return (
     <Router>
@@ -19,18 +22,20 @@ const App = () => {
       <ScrollProgress />
       <ScrollToTop />
       <main className=" container select-none">
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Work/:type" element={<Work />} />
-          <Route path="/Press&Events" element={<NewsEvents />} />
-          <Route path="/Book/:book" element={<SingleBookLayout />} />
-          <Route path="/Article/:article" element={<SingleArticleLayout />} />
-          <Route path="/Story/:story" element={<SingleStoryLayout />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-        <Footer></Footer>
+        <Navbar />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Work/:type" element={<Work />} />
+            <Route path="/Press&Events" element={<NewsEvents />} />
+            <Route path="/Book/:book" element={<SingleBookLayout />} />
+            <Route path="/Article/:article" element={<SingleArticleLayout />} />
+            <Route path="/Story/:story" element={<SingleStoryLayout />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+        <Footer />
       </main>
     </Router>
   );

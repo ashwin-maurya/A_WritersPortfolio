@@ -30,6 +30,7 @@ const Books = ({ BookData }) => {
                 {singleBook?.title}
               </span>{" "}
               <img
+                loading="lazy"
                 src={singleBook.cover}
                 alt=""
                 className="2xl:w-[400px] cursor-pointer w-[350px] max-md:w-[250px]"
@@ -44,7 +45,7 @@ const Books = ({ BookData }) => {
               >
                 {singleBook?.title}
               </span>{" "}
-              <div className="text-justify max-md:text-[16px] font-TimesNewRoman  2xl:text-[23px] text-[16px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
+              <div className="text-justify max-md:text-[19px] font-TimesNewRoman line-clamp-5 2xl:text-[25px] text-[20px] max-md:leading-none leading-7 text-gray-900 w-[90%] max-md:w-[85%] max-md:mt-6">
                 {singleBook.description}
               </div>
               <div className="flex gap-7 2xl:mt-5 mt-0 max-md:mt-2 max-md:gap-1">
@@ -56,24 +57,23 @@ const Books = ({ BookData }) => {
                 >
                   <span>READ MORE</span>
                   <img
+                    loading="lazy"
                     src={ArrowRightBlack}
                     className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
                     alt=""
                   />
                 </div>
-                <div
-                  className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[2px]  border-black"
-                  onClick={() => {
-                    navigate(`{${singleBook.orderLink}}`);
-                  }}
-                >
-                  <span>GET A COPY HERE</span>
-                  <img
-                    src={Cart}
-                    className=" w-7 max-md:pl-0 max-md:w-4 max-md:px-0  px-1 pl-2"
-                    alt=""
-                  />
-                </div>
+                <a href={singleBook.orderLink} target="_blank">
+                  <div className=" max-sm:p-1 max-md:mt-2  max-md:m-1   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-2 max-sm:text-[14px] max-md:border-[2px]  border-black">
+                    <span>GET A COPY HERE</span>
+                    <img
+                      loading="lazy"
+                      src={Cart}
+                      className=" w-7 max-md:pl-0 max-md:w-4 max-md:px-0  px-1 pl-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

@@ -21,14 +21,19 @@ const ArticleCard = ({ art }) => {
         >
           {art?.title}
         </span>{" "}
-        <img src={art.cover} alt="" className="cursor-pointer w-[650px]" />
+        <img
+          loading="lazy"
+          src={art.cover}
+          alt={art?.title}
+          className="cursor-pointer w-[650px]"
+        />
       </div>
       <div className="w-[60%] max-md:w-full flex max-md:gap-0  flex-col gap-4">
-        <div className="max-md:mt-2 max-md:text-[16px]">
+        <div className="max-md:mt-2 text-[23px] max-md:text-[22px]">
           <span>Published in </span>
           <a href={art.link} target="_blank" rel="noopener noreferrer">
             {" "}
-            <span className="font-Authorfont text-[17px] mx-0 italic">
+            <span className="font-Authorfont mx-0 italic">
               {art.publication}
             </span>{" "}
           </a>
@@ -42,7 +47,7 @@ const ArticleCard = ({ art }) => {
           {art?.title}
         </span>{" "}
         <span
-          className=" leading-7 max-md:mt-1  text-[18px] 2xl:text-[22px] text-justify max-md:text-[18px] max-md:leading-5 font-TimesNewRoman "
+          className=" leading-7 max-md:mt-1 line-clamp-4 text-[25px] 2xl:text-[28px] text-justify max-md:text-[20px] max-md:leading-5 font-TimesNewRoman "
           onClick={() => {
             navigate(`/Article/${art?.title.replace(/\s+/g, "-")}`);
           }}

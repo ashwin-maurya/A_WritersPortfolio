@@ -7,6 +7,7 @@ const Synopsis1 = ({ bookdetails }) => {
       <div className="flex justify-between max-lg:justify-center  max-lg:flex-col  items-center">
         <div className="w-[400px]    max-lg:py-0 py-20 max-lg:h-[250px] max-lg:w-full  max-lg:bg-black    max-md:blur-[0px]   h-full ">
           <img
+            loading="lazy"
             src={Synopsis}
             className="w-full object-cover max-lg:opacity-[0.29]  h-full"
             alt=""

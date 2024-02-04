@@ -35,6 +35,7 @@ const HomeHeroCards = ({ story }) => {
               <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[160px] mt-2 flex justify-center items-center flex-row text-white px-2 py-1 border-2  gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
                 <span>READ MORE</span>
                 <img
+                  loading="lazy"
                   src={ArrowRight}
                   className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
                   alt=""

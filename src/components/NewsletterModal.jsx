@@ -36,6 +36,7 @@ export default function NewsletterModal(props) {
         <div className="w-auto max-lg:w-[90%] 2xl:scale-125 flex rounded-lg h-auto overflow-hidden bg-white shadow-xl">
           <div className="flex items-center w-[45%] h-full  bg-[#c182f5] max-md:hidden">
             <img
+              loading="lazy"
               src="https://images.unsplash.com/photo-1516410529446-2c777cb7366d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="max-h-[500px]"
               alt="girl-reading-a-book"

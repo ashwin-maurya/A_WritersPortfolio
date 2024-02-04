@@ -60,14 +60,16 @@ const Navbar = () => {
               location.pathname.includes("/Story") ||
               location.pathname.includes("/Article") ? (
                 <img
+                  loading="lazy"
                   src={showNav ? AMGautmaBlack : AMGautmaWhite}
-                  className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
+                  className="h-14 max-sm:ml-2 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
                   alt=""
                 />
               ) : (
                 <img
+                  loading="lazy"
                   src={AMGautmaBlack}
-                  className="h-14 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
+                  className="h-14 max-sm:ml-2 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
                   alt=""
                 />
               )}

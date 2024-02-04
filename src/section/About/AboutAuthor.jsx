@@ -6,6 +6,7 @@ export default function AboutAuthor() {
       <div className="relative bg-slate-50  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className="float-left ">
           <img
+            loading="lazy"
             src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
             // src={RandomPerson}
             alt="person"

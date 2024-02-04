@@ -2,48 +2,35 @@ import React from "react";
 import { ArrowRightBlack } from "../../assets/icons";
 
 export default function Cards() {
-  const blogs = [
-    {
-      title: "The Twin towers",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.",
-      imageSrc:
-        "https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=14a02fab1200216368d682ecaa91e540",
-    },
-    {
-      title: "Looking for alaska",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.",
-      imageSrc:
-        "https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=14a02fab1200216368d682ecaa91e540",
-    },
-    // Add more blog entries as needed
-  ];
-
   return (
     <>
-      <div className="flex gap-16 max-md:gap-10 max-sm:gap-7 py-20 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
-        {blogs.map((blog, index) => (
-          <div
-            key={index}
-            className={`flex max-md:flex-col ${
-              index % 2 === 1 ? "flex-row-reverse" : ""
-            }`}
-          >
-            <div className="relative max-h-[700px]">
-              <img
-                src={blog.imageSrc}
-                className="max-w-full max-h-[700px] object-cover object-center"
-                alt=""
-              />
-            </div>
-
-            <div className="px-8 pb-8 max-md:p-8 max-sm:pt-4">
-              <h1 className="pb-2 max-sm:pb-2 text-4xl relative font-Gamiliademo capitalize">
-                {blog.title}
-              </h1>
-              <p className="mb-4 font-montserrat">{blog.content}</p>
-              <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-black   border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px]   border-black">
+      <div className="flex gap-10 max-md:gap-10 max-sm:gap-7 py-10 pb-20 max-sm:py-10 flex-col px-32 max-sm:px-0 mt-5 max-md:mt-0">
+        {/* Hardcoded Data 1 */}
+        <div className="flex bg-green-50 shadow-sm  rounded-sm">
+          <div className="px-12 py-10">
+            <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize">
+              Won the 2020 Short Story Contest
+            </h1>
+            <a
+              href="https://defenestrationism.net/announcing-the-winners-of-the-2020-short-story-contest/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <h5 className="italic font-CooperHevitt text-xl my-1">
+                by Defenestrationism.net
+              </h5>
+            </a>
+            <p className="mb-4 font-montserrat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              laborum suscipit doloremque, expedita voluptatum maiores corporis
+              modi assumenda esse consectetur error nulla, vero alias.
+            </p>
+            <a
+              href="https://defenestrationism.net/announcing-the-winners-of-the-2020-short-story-contest/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
                 <span>READ MORE</span>
                 <img
                   src={ArrowRightBlack}
@@ -51,9 +38,107 @@ export default function Cards() {
                   alt=""
                 />
               </div>
-            </div>
+            </a>
           </div>
-        ))}
+        </div>
+
+        {/* Hardcoded Data 2 */}
+        <div className="flex bg-purple-50 shadow-sm ">
+          <div className="px-12 py-10">
+            <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize">
+              Longlisted for the 2022 TFA Award in Creative writing
+            </h1>
+            <p className="mb-4 font-montserrat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              laborum suscipit doloremque, expedita voluptatum maiores corporis
+              modi assumenda esse consectetur error nulla, vero alias.
+            </p>
+          </div>
+        </div>
+
+        {/* Hardcoded Data 3 */}
+        <div className="flex bg-orange-50 shadow-sm">
+          <div className="px-12 py-10">
+            <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize">
+              Longlisted for the 2024 TFA Award in Creative Writing
+            </h1>
+            <p className="mb-4 font-montserrat">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              laborum suscipit doloremque, expedita voluptatum maiores corporis
+              modi assumenda esse consectetur error nulla, vero alias.
+            </p>
+            <a
+              href="https://totofundsthearts.org/awards/creative-writing-in-english"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+                <span>READ MORE</span>
+                <img
+                  src={ArrowRightBlack}
+                  className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        {/* Hardcoded Data 4 */}
+        <div className="flex bg-blue-50 shadow-sm">
+          <div className="px-12 py-10">
+            <h1 className="pb-2 text-4xl relative font-Gamiliademo capitalize mb-5">
+              Interviewed by MoneyControl
+            </h1>
+            <a
+              href="https://www.moneycontrol.com/news/lifestyle/books/ai-writing-part-1-four-writers-share-why-human-writing-is-unlikely-to-replace-llm-based-predictive-writing-12008711.html/amp?fbclid=PAAaaWIZ8hQ3jz9c2EtQDNdciSzuMy-QFz5QzrklCImde8xcYiEpjzS2BMgB4_aem_Ae79GF5z7S66-Rfb-nlU6QnK75QqQqTjVtTS2wC-K8fPcu30setZ0nYBHg3coGirNiA"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <h3 className="font-CooperHevitt text-2xl mb-2">
+                AI & writing Part 1: Four authors on why human writing is
+                unlikely to be replaced by LLM-based predictive writing
+              </h3>
+            </a>
+            <a
+              href="https://www.moneycontrol.com/news/lifestyle/books/ai-writing-part-1-four-writers-share-why-human-writing-is-unlikely-to-replace-llm-based-predictive-writing-12008711.html/amp?fbclid=PAAaaWIZ8hQ3jz9c2EtQDNdciSzuMy-QFz5QzrklCImde8xcYiEpjzS2BMgB4_aem_Ae79GF5z7S66-Rfb-nlU6QnK75QqQqTjVtTS2wC-K8fPcu30setZ0nYBHg3coGirNiA"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+                <span>READ MORE</span>
+                <img
+                  src={ArrowRightBlack}
+                  className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.moneycontrol.com/news/trends/lifestyle/ai-writing-part-2-a-failed-chatgpt-experiment-and-a-few-glad-authors-12008821.html"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <h3 className="font-CooperHevitt text-2xl mb-2 mt-10">
+                2. AI & writing Part 2: A failed ChatGPT experiment and a few
+                glad authors
+              </h3>
+            </a>
+            <a
+              href="https://www.moneycontrol.com/news/trends/lifestyle/ai-writing-part-2-a-failed-chatgpt-experiment-and-a-few-glad-authors-12008821.html"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <div className="max-sm:p-1 max-md:mt-2 max-md:m-0 w-auto max-w-[200px] flex justify-center items-center flex-row text-black border-2 p-2 gap-2 max-md:gap-1 max-sm:text-[14px] border-black">
+                <span>READ MORE</span>
+                <img
+                  src={ArrowRightBlack}
+                  className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );

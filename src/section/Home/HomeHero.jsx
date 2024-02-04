@@ -75,6 +75,7 @@ export default function HomeHero() {
               <div className="transition-all ease-in-out duration-200 absolute bg-pink-200 top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img
+                    loading="lazy"
                     src={TheGreatestIndianStoriesEverTold}
                     className="h-[380px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[300px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
                     alt=""
@@ -104,6 +105,7 @@ export default function HomeHero() {
                     <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-black">
                       <span>READ MORE</span>
                       <img
+                        loading="lazy"
                         src={ArrowRightBlack}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
                         alt=""
@@ -112,6 +114,7 @@ export default function HomeHero() {
                     <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-black">
                       <span>BUY NOW</span>
                       <img
+                        loading="lazy"
                         src={ArrowRightBlack}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
                         alt=""
@@ -133,6 +136,7 @@ export default function HomeHero() {
               <div className="transition-all ease-in-out duration-200 absolute bg-blue-950 max-sm:bg-[#161240] top-0  w-[50%] max-sm:w-[60%] h-full ">
                 <div className="w-full h-full flex justify-start items-center">
                   <img
+                    loading="lazy"
                     src={caseIndia}
                     className="h-[350px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[430px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[280px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
                     alt=""
@@ -162,6 +166,7 @@ export default function HomeHero() {
                     <div className="max-sm:p-1 max-md:mt-2  max-md:m-0   w-auto max-w-[200px] flex justify-center items-center flex-row text-white px-2 py-1 border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
                       <span>READ MORE</span>
                       <img
+                        loading="lazy"
                         src={ArrowRight}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
                         alt=""
@@ -170,6 +175,7 @@ export default function HomeHero() {
                     <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-white px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
                       <span>BUY NOW</span>
                       <img
+                        loading="lazy"
                         src={ArrowRight}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
                         alt=""

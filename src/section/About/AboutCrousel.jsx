@@ -52,6 +52,7 @@ const AboutCrousel = () => {
               }}
             >
               <img
+                loading="lazy"
                 src={reviews[currentIndex]?.cover}
                 alt=""
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
@@ -69,6 +70,7 @@ const AboutCrousel = () => {
               }}
             >
               <img
+                loading="lazy"
                 src={reviews[currentIndex].cover}
                 alt=""
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
@@ -98,6 +100,7 @@ const AboutCrousel = () => {
                 }}
               >
                 <img
+                  loading="lazy"
                   src={reviews[currentIndex]?.cover}
                   alt=""
                   className=" w-[500px]   max-md:w-full  opacity-70"
@@ -141,6 +144,7 @@ const AboutCrousel = () => {
             <span className="bg-black text-white max-md:p-2 min-w-[250px] py-4 px-10 text-[20px] max-md:text-[16px]  flex justify-center items-center text-center font-serif">
               <span>Read Here</span>
               <img
+                loading="lazy"
                 src={ArrowRight}
                 className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
                 alt=""

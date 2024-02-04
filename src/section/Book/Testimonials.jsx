@@ -7,6 +7,7 @@ const Testimonials = () => {
     <section className=" relative  flex flex-col items-center text-slate-200 mt-28 max-md:mt-7 max-md:py-8">
       <div className="w-full  max-md:h-[800px] top-0  h-[800px] bg-black     max-md:py-0   max-md:bg-black max-md:blur-[0px]  ">
         <img
+          loading="lazy"
           src={reviewhero}
           className="w-full  object-cover     max-md:opacity-90  h-full"
           alt=""

@@ -5,6 +5,7 @@ const BookHero = () => {
   return (
     <div className="h-72   relative flex  bg-black justify-center max-sm:h-52 items-end ">
       <img
+        loading="lazy"
         src={Bookhero}
         alt="AboutTopImg"
         className="object-cover max-md:object-bottom w-full h-full opacity-30 "

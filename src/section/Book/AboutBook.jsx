@@ -10,6 +10,7 @@ const AboutBook = ({ bookdetails }) => {
       <div className="relative  max-lg:hidden  p-16 max-sm:p-0 max-md:mt-8  max-sm:ml-4  justify-center items-center">
         <div className=" bg-slate-200  md:pl-10  lg:pl-16 lg:ml-14 p-6 pl-36 xl:ml-36    w-[50%]   ">
           <img
+            loading="lazy"
             src={bookdetails?.cover}
             alt="person"
             className="  max-sm:pr-2  max-sm:pb-1 2xl:h-[450px] h-[400px]   "
@@ -32,6 +33,7 @@ const AboutBook = ({ bookdetails }) => {
       <div className="relative lg:hidden  z-50 p-16 max-sm:p-0 max-md:mt-0  max-sm:ml-4  justify-center items-center">
         <div className="float-left bottom-0  mr-2  max-md:h-[220px]">
           <img
+            loading="lazy"
             src={bookdetails?.cover}
             alt="person"
             className=" pb-4  z-10 max-md:pr-0 max-md:pb-8  max-xl:h-[550px] max-lg:h-[500px]    max-sm:h-[260px] h-[600px]  "

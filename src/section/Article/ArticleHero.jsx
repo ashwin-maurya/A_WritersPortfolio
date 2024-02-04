@@ -4,6 +4,7 @@ const ArticleHero = () => {
   return (
     <div className="h-72  relative flex  bg-black justify-center max-sm:h-44 items-end ">
       <img
+        loading="lazy"
         src="https://images.unsplash.com/photo-1611222566295-885a2c99153a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b2NlYW4lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww"
         alt="AboutTopImg"
         className="  w-full h-full opacity-30 "

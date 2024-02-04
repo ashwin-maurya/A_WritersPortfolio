@@ -10,13 +10,13 @@ const StoryBody = ({ storydata }) => {
         <a href={storydata?.link} target="_blank" rel="noopener noreferrer">
           <div className="font-semibold flex justify-center items-center ">
             {" "}
-            <span className="text-gray-600 mr-2 max-md:text-[12px]">
+            <span className="text-gray-600 mr-2 max-md:text-[15px]">
               Published in{" "}
             </span>{" "}
             <span className="uppercase text-[15px] max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald ">
               {storydata?.published}
             </span>
-            <img src={goto} className="w-4 mx-1 h-4" alt="" />
+            <img loading="lazy" src={goto} className="w-4 mx-1 h-4" alt="" />
           </div>
         </a>
 
@@ -34,9 +34,10 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
         {storydata?.title}
       </div>
 
-      <div className="mt-10 w-[70%] max-md:w-[86%] mx-auto  max-md:mt-6 flex flex-col justify-center items-center   ">
+      <div className="mt-10 w-[70%] max-md:w-[100%] mx-auto  max-md:mt-6 flex flex-col justify-center items-center   ">
         <div className=" ">
           <img
+            loading="lazy"
             src={storydata?.cover2}
             alt="person"
             className=" pb-1 pr-6   w-full z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%]  mx-auto "
@@ -44,7 +45,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
         </div>
 
         <div
-          className="text-[24px]  tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[17px] max-md:text-[15.6px]  select-text  font-TimesNewRoman        "
+          className="text-[24px]  tracking-wide  mt-4 max-md:p-4  p-14   bg-white  text-justify max-lg:w-[100%] max-md:w-[100%]  max-md:leading-[22px] max-md:text-[20px]  select-text  font-TimesNewRoman        "
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(storydata?.description),
           }}

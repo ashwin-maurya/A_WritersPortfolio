@@ -13,10 +13,10 @@ export default function NewsEvents() {
           content="Contact A.M. Gautam on his mail. Feedbacks, reviews, questions, interviews everything. Just hop on."
         />
       </Helmet>
+      <Cards />
       <div className="grid">
         <Hero />
       </div>
-      <Cards />
     </>
   );
 }

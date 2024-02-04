@@ -17,6 +17,7 @@ const StoryCard = ({ ind }) => {
     >
       <div className="z-50   shadow-black bg-black max-md:shadow-xl max-md:shadow-gray-600  shadow-md">
         <img
+          loading="lazy"
           src={story?.cover}
           alt=""
           className=" w-[240px] max-md:h-[280px]   h-[380px]  max-md:w-full opacity-70"
