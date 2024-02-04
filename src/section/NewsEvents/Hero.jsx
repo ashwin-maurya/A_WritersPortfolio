@@ -17,7 +17,7 @@ export default function Hero() {
               <img
                 loading="lazy"
                 src={TheGreatestIndianStoriesEverTold}
-                className="h-[350px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[250px] max-sm:h-[230px] mr-10 max-md:mr-7 max-sm:mr-2"
+                className="h-[350px] ml-10 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[350px] max-lg:h-[300px] max-md:h-[230px] max-sm:h-[200px] mr-10 max-md:mr-7 max-sm:mr-2"
                 alt=""
               />
             </div>
