@@ -103,7 +103,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="max-lg:my-5 max-lg:mb-10 w-[30%] max-lg:w-full">
+            <div className="max-lg:my-5 max-lg:mb-10 max-sm:mb-0 w-[30%] max-lg:w-full">
               <div className=" w-[100%] my-2 max-lg:w-[90%] max-sm:w-full">
                 <h1 className="text-xl my-1 font-bold mb-3 text-center max-sm:mb-0 font-CooperHevitt 2xl:text-2xl ">
                   Susbcribe to our Newsletter
