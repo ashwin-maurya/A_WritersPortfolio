@@ -21,7 +21,12 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto  text-[45px] max-md:text-[24px]
             <span className="uppercase text-[15px] max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald">
               {articledata?.publication}{" "}
             </span>
-            <img loading="lazy" src={goto} className="w-4 mx-1 h-4" alt="" />
+            <img
+              loading="lazy"
+              src={goto}
+              className="w-4 mx-1 h-4"
+              alt="Go to Button Logo"
+            />
           </div>
         </a>
 

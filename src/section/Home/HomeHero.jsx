@@ -78,7 +78,7 @@ export default function HomeHero() {
                     loading="lazy"
                     src={TheGreatestIndianStoriesEverTold}
                     className="h-[380px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[450px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[300px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
-                    alt=""
+                    alt="The Greatest Indian Stories Ever Told Book Cover Image"
                   />
                 </div>
               </div>
@@ -108,7 +108,7 @@ export default function HomeHero() {
                         loading="lazy"
                         src={ArrowRightBlack}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
-                        alt=""
+                        alt="Arrow Right Icon"
                       />
                     </div>
                     <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-black px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-black">
@@ -117,7 +117,7 @@ export default function HomeHero() {
                         loading="lazy"
                         src={ArrowRightBlack}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                        alt=""
+                        alt="Buy Now Button"
                       />
                     </div>
                   </div>
@@ -129,7 +129,7 @@ export default function HomeHero() {
               className="relative w-[1000px] max-xl:w-[900px] max-lg:w-[700px] 2xl:w-[1200px] max-sm:w-full rounded max-md:rounded-none h-full flex-shrink-0 snap-center overflow-hidden cursor-pointer"
               onClick={() => {
                 navigate(
-                  `/Book/A-Case-of-Indian-Marvels:-Dazzling-Stories-from-the-Country’s-Finest-New-Writers`
+                  `/Book/A-Case-of-Indian-Marvels:-Dazzling-Stories-from-the-Country's-Finest-New-Writers`
                 );
               }}
             >
@@ -139,7 +139,7 @@ export default function HomeHero() {
                     loading="lazy"
                     src={caseIndia}
                     className="h-[350px] ml-5 max-md:ml-5 max-sm:ml-0 2xl:h-[430px] max-xl:h-[350px] max-lg:h-[330px] max-md:h-[280px] max-sm:h-[220px] mr-10 max-md:mr-7 max-sm:mr-2 z-50"
-                    alt=""
+                    alt="A Case of Indian Marvels Book Cover Image"
                   />
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function HomeHero() {
                         loading="lazy"
                         src={ArrowRight}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-sm:w-4 max-md:px-0 pl-2"
-                        alt=""
+                        alt="Arrow Right Icon"
                       />
                     </div>
                     <div className="max-sm:p-1 max-sm:hidden max-md:mt-2  max-md:m-0 py-1  w-auto max-w-[200px] flex justify-center items-center flex-row text-white px-2  border-2 p2 gap-2 max-md:gap-1 max-sm:text-[12px]   border-white">
@@ -178,7 +178,7 @@ export default function HomeHero() {
                         loading="lazy"
                         src={ArrowRight}
                         className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                        alt=""
+                        alt="Arrow Right Icon"
                       />
                     </div>
                   </div>

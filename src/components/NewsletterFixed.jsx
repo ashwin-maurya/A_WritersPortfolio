@@ -36,7 +36,7 @@ export default function NewsletterFixed() {
         onClick={openModal}
       >
         Subscribe
-        <img loading="lazy" src={plus} alt="" />
+        <img loading="lazy" src={plus} alt="Subscribe Plus Button" />
       </div>
     </>
   );

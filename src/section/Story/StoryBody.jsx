@@ -15,7 +15,12 @@ const StoryBody = ({ storydata }) => {
             <span className="uppercase text-[15px] max-md:text-[12px] hover:underline hover:text-blue-500 font-Oswald ">
               {storydata?.published}
             </span>
-            <img loading="lazy" src={goto} className="w-4 mx-1 h-4" alt="" />
+            <img
+              loading="lazy"
+              src={goto}
+              className="w-4 mx-1 h-4"
+              alt="Goto Image"
+            />
           </div>
         </a>
 
@@ -38,7 +43,7 @@ font-Gamiliademo  w-[90%] max-md:w-[90%] mx-auto text-center   text-[45px] max-m
           <img
             loading="lazy"
             src={storydata?.cover2}
-            alt="person"
+            alt={storydata?.title}
             className=" pb-1 pr-6   w-full z-10 max-md:pr-2 max-md:pb-[1px]    max-md:w-[80%]  mx-auto "
           />
         </div>

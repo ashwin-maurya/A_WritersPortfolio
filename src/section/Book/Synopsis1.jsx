@@ -10,7 +10,7 @@ const Synopsis1 = ({ bookdetails }) => {
             loading="lazy"
             src={Synopsis}
             className="w-full object-cover max-lg:opacity-[0.29]  h-full"
-            alt=""
+            alt="Synopsis Image"
           />
         </div>
         <div className=" z-30  text-[35px]  font-bold  max-md:text-[23px] absolute  text-center max-lg:left-[40%]  left-40 max-lg:top-[10%] font-CooperHevitt     border-b-[3px]  max-lg:border-b-[2px] tracking-widest  text-white border-white ">

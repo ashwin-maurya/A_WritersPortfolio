@@ -24,7 +24,12 @@ const StoryCardnew = ({ ind }) => {
             navigate(`/Story/${ind?.title.replace(/\s+/g, "-")}`);
           }}
         >
-          <img loading="lazy" src={ind.cover2} alt="" className="w-[650px]" />
+          <img
+            loading="lazy"
+            src={ind.cover2}
+            alt={ind?.title}
+            className="w-[650px]"
+          />
         </div>
         <div className="w-[60%]  max-md:w-full flex max-md:gap-4  flex-col gap-10 ">
           <div className="flex flex-col gap-3">
@@ -61,7 +66,7 @@ const StoryCardnew = ({ ind }) => {
                 loading="lazy"
                 src={ArrowRight}
                 className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
-                alt=""
+                alt="Arrow Right"
               />
             </span>
           </button>

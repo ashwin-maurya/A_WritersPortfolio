@@ -12,7 +12,7 @@ export default function About() {
               <img
                 loading="lazy"
                 src="https://lh3.googleusercontent.com/pw/ABLVV85D7meutv_6vpScXzib2drsyc0b5iuJzE7qAPhOkZLgAH_9xRt34reh_z5wwCDgQodWfKcO1VDgbqdHywHvr37guFsOMEz_BT5nfv-PK8WK4fN6BsAW_XX3_FVCptCPQdyxtzR3fBtVYPvSAUQnkRAEYw=w685-h913-s-no-gm?authuser=0"
-                alt=""
+                alt="A.M. Gautam Image"
                 className="2xl:w-[400px] absolute max-sm:relative max-sm:bottom-0 max-sm:right-0 bottom-12 right-10 2xl:h-[400px]  z-40 object-cover object-center w-[350px] h-[350px]  max-xl:w-[300px]   max-xl:h-[300px]"
               />
             </div>

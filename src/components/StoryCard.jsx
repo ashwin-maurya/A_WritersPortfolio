@@ -19,7 +19,7 @@ const StoryCard = ({ ind }) => {
         <img
           loading="lazy"
           src={story?.cover}
-          alt=""
+          alt={story?.title}
           className=" w-[240px] max-md:h-[280px]   h-[380px]  max-md:w-full opacity-70"
         />
       </div>

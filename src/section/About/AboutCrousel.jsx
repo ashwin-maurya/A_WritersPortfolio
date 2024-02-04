@@ -54,7 +54,7 @@ const AboutCrousel = () => {
               <img
                 loading="lazy"
                 src={reviews[currentIndex]?.cover}
-                alt=""
+                alt={reviews[currentIndex]?.title}
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
               />
             </div>
@@ -72,7 +72,7 @@ const AboutCrousel = () => {
               <img
                 loading="lazy"
                 src={reviews[currentIndex].cover}
-                alt=""
+                alt={reviews[currentIndex]?.title}
                 className=" transition ease-in-out group3 w-full h-full object-top     m-auto mb-1 "
               />
             </div>
@@ -102,7 +102,7 @@ const AboutCrousel = () => {
                 <img
                   loading="lazy"
                   src={reviews[currentIndex]?.cover}
-                  alt=""
+                  alt={reviews[currentIndex]?.title}
                   className=" w-[500px]   max-md:w-full  opacity-70"
                 />
               </div>
@@ -147,7 +147,7 @@ const AboutCrousel = () => {
                 loading="lazy"
                 src={ArrowRight}
                 className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
-                alt=""
+                alt={reviews[currentIndex]?.title}
               />
             </span>
           </button>

@@ -5,7 +5,7 @@ const BookDownload = () => {
   return (
     <section className="flex  ml-56 max-md:ml-2 max-md:my-14 my-32 items-center relative">
       <div className="w-[600px] max-md:w-[250px]  p-22 z-30  ">
-        <img loading="lazy" src={Download2} alt="" className="" />
+        <img loading="lazy" src={Download2} alt="Download Logo" className="" />
       </div>
 
       <div className="right-[30%] p-24  max-md:gap-2 z-30 bg-slate-100 max-md:right-2  absolute  max-md:p-5  uppercase   gap-6   flex-col flex justify-center items-center">

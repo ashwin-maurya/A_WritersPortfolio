@@ -31,8 +31,8 @@ const Books = ({ BookData }) => {
               </span>{" "}
               <img
                 loading="lazy"
-                src={singleBook.cover}
-                alt=""
+                src={singleBook?.cover}
+                alt={singleBook?.title}
                 className="2xl:w-[400px] cursor-pointer w-[350px] max-md:w-[250px]"
               />
             </div>
@@ -60,7 +60,7 @@ const Books = ({ BookData }) => {
                     loading="lazy"
                     src={ArrowRightBlack}
                     className="w-8 px-1  max-md:pl-0 max-md:w-4  max-md:px-0 pl-2"
-                    alt=""
+                    alt="arrow right"
                   />
                 </div>
                 <a href={singleBook.orderLink} target="_blank">
@@ -70,7 +70,7 @@ const Books = ({ BookData }) => {
                       loading="lazy"
                       src={Cart}
                       className=" w-7 max-md:pl-0 max-md:w-4 max-md:px-0  px-1 pl-2"
-                      alt=""
+                      alt="Add to cart"
                     />
                   </div>
                 </a>

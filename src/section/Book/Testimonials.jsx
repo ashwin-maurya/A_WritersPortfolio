@@ -10,7 +10,7 @@ const Testimonials = () => {
           loading="lazy"
           src={reviewhero}
           className="w-full  object-cover     max-md:opacity-90  h-full"
-          alt=""
+          alt="Testimonial Image"
         />
       </div>
 

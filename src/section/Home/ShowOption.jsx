@@ -19,7 +19,7 @@ const ShowOption = () => {
           <img
             loading="lazy"
             src={nonFictionimg}
-            alt=""
+            alt="Non-Fiction Image"
             className="w-[500px] opacity-60"
           />
 
@@ -36,7 +36,7 @@ const ShowOption = () => {
           <img
             loading="lazy"
             src={Fictionimg}
-            alt=""
+            alt="Fiction Image"
             className="opacity-60 w-[500px]"
           />
           <p className="absolute tracking-wide text-white font-Gamiliademo text-[42px] max-md:text-[24px] z-50">

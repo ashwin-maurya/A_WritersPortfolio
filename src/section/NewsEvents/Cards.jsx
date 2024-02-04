@@ -22,7 +22,7 @@ export default function Cards() {
                 <img
                   src={ArrowRightBlack}
                   className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                  alt=""
+                  alt="Arrow Right"
                 />
               </div>
             </a>
@@ -57,7 +57,7 @@ export default function Cards() {
                 <img
                   src={ArrowRightBlack}
                   className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                  alt=""
+                  alt="arrow right"
                 />
               </div>
             </a>
@@ -81,7 +81,7 @@ export default function Cards() {
                 <img
                   src={ArrowRightBlack}
                   className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                  alt=""
+                  alt="arrow right"
                 />
               </div>
             </a>
@@ -123,7 +123,7 @@ export default function Cards() {
                 <img
                   src={ArrowRightBlack}
                   className="w-8 px-1 max-md:pl-0 max-md:w-5 max-md:px-0 pl-2"
-                  alt=""
+                  alt="arrow right"
                 />
               </div>
             </a>

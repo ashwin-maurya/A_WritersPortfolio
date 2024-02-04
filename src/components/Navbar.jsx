@@ -63,14 +63,14 @@ const Navbar = () => {
                   loading="lazy"
                   src={showNav ? AMGautmaBlack : AMGautmaWhite}
                   className="h-14 max-sm:ml-2 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
-                  alt=""
+                  alt="A.M. Gautam Black Logo"
                 />
               ) : (
                 <img
                   loading="lazy"
                   src={AMGautmaBlack}
                   className="h-14 max-sm:ml-2 2xl:h-20 max-md:h-14 max-sm:h-12 max-md:-translate-y-[0.3rem]"
-                  alt=""
+                  alt="A.M. Gautam White Logo"
                 />
               )}
             </Link>
