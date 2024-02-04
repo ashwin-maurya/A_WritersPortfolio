@@ -25,7 +25,7 @@ const App = () => {
         <Navbar />
         <Suspense
           fallback={
-            <div className="flex justify-center  h-40 items-center my-20">
+            <div className="flex justify-center transition-all ease-out duration-200  h-40 items-center mt-32 mb-96">
               <div class="shapes-5 "></div>
             </div>
           }
