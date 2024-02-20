@@ -19,7 +19,7 @@ const StoryCardnew = ({ ind }) => {
         className="max-md:flex-col   justify-between items-start   max-md:gap-3  gap-10  flex   "
       >
         <div
-          className="max-md:w-full mr-10 cursor-pointer"
+          className="max-md:w-full mr-10 cursor-pointer "
           onClick={() => {
             navigate(`/Story/${ind?.title.replace(/\s+/g, "-")}`);
           }}
@@ -28,16 +28,16 @@ const StoryCardnew = ({ ind }) => {
             loading="lazy"
             src={ind.cover2}
             alt={ind?.title}
-            className="w-[650px]"
+            className="w-[650px] max-h-[320px] max-sm:max-h-[250px] object-cover object-center"
           />
         </div>
         <div className="w-[60%]  max-md:w-full flex max-md:gap-4  flex-col gap-10 ">
           <div className="flex flex-col gap-3">
-            <div className="max-md:mt-2 text-[23px] max-md:text-[20px]">
+            <div className="max-md:mt-2 text-[23px] max-md:text-[17px]">
               <span>Published in </span>
               <a href={ind.link} target="_blank" rel="noopener noreferrer">
                 {" "}
-                <span className="font-Authorfont mx-0 italic">
+                <span className="font-Authorfont mx-0  italic">
                   {ind.published}
                 </span>{" "}
               </a>

@@ -28,7 +28,7 @@ const ArticleCard = ({ art }) => {
         />
       </div>
       <div className="w-[60%] max-md:w-full flex max-md:gap-0  flex-col gap-4">
-        <div className="max-md:mt-2 text-[23px] max-md:text-[22px]">
+        <div className="max-md:mt-2 text-[23px] max-md:text-[18px]">
           <span>Published in </span>
           <a href={art.link} target="_blank" rel="noopener noreferrer">
             {" "}

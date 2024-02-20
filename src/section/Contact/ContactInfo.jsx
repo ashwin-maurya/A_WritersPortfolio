@@ -14,26 +14,19 @@ export default function ContactInfo() {
           </h1>
 
           <div className="max-lg:flex justify-center items-center flex-col">
-            <ul className="max-lg:flex 2xl:text-xl 2xl:my-2 justify-center items-center flex-col font-montserrat">
+            <ul className="max-lg:flex 2xl:text-xl 2xl:my-2 gap-2 justify-center items-center flex-col font-montserrat">
               <li>Publisher's </li>
-              <li>The Orion Publishing Group</li>
-              <li>enquiries@hachette.co.uk</li>
+              <li>Aleph Book Company</li>
+              <li className="mt-3">
+                <b>Publicity:</b> <br /> publicity@alephbookcompany.com
+              </li>
+              <li className="mt-3">
+                <b>General Information:</b> <br /> info@alephbookcompany.com
+              </li>
             </ul>
           </div>
         </div>
-        <div className="max-lg:flex justify-center items-center flex-col">
-          {" "}
-          <h1 className="text-3xl 2xl:text-4xl max-md:text-xl font-CooperHevitt">
-            LITERARY REPRESENTATION
-          </h1>
-          <div className="max-lg:flex justify-center items-center flex-col">
-            <ul className="max-lg:flex 2xl:text-xl 2xl:my-2 justify-center items-center flex-col font-montserrat">
-              <li>Agent</li>
-              <li>Sam Copeland, RCW Literary Agency</li>
-              <li>info@rcwlitagency.com</li>
-            </ul>
-          </div>
-        </div>
+
         <div className="flex 2xl:text-2xl gap-5 text-xl py-4 sm:mt-0">
           <SocialLinks />
         </div>

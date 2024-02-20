@@ -27,9 +27,13 @@ import caseIndia from "./caseIndia.png";
 import SalmanRushdie from "./SalmanRushdie.webp";
 import Fictionimg from "./Fictionimg.jpeg";
 import nonFictionimg from "./nonFictionimg.jpeg";
+import AMGautam from "./am_gautam.jpg";
+import Alligator from "./alligator-of-aligarh.png";
 import darksea from "./darksea.jpg";
 export {
+  Alligator,
   darksea,
+  AMGautam,
   nonFictionimg,
   Fictionimg,
   SalmanRushdie,

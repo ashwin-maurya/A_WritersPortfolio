@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white mt-5 border-t-[1px] border-gray-100">
+      <footer className="bg-white border-t-[1px] border-gray-100">
         <div className=" w-full py-6 max-lg:py-2 px-20 max-lg:px-5">
           <div className="flex max-lg:flex-col">
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 2xl:text-lg font-montserrat  w-[70%] max-lg:w-full">
@@ -67,12 +67,18 @@ export default function Footer() {
                   <span className="font-semibold">View</span>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline line-clamp-2">
+                  <Link
+                    to="/privacy&policy"
+                    className="hover:underline line-clamp-2"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline line-clamp-2">
+                  <Link
+                    to="/terms&conditions"
+                    className="hover:underline line-clamp-2"
+                  >
                     Terms &amp; Conditions
                   </Link>
                 </li>

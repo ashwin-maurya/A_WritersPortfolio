@@ -17,7 +17,7 @@ const About = () => {
       and elsewhere."
         />
       </Helmet>
-      ;<AboutHero></AboutHero>
+      <AboutHero></AboutHero>
       <AboutAuthor></AboutAuthor>
       <AboutCrousel></AboutCrousel>
       <WritingJourney></WritingJourney>

@@ -10,6 +10,10 @@ import NewsletterFixed from "./components/NewsletterFixed";
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Work = lazy(() => import("./pages/Work"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const TermsAndConditionsPage = lazy(() =>
+  import("./pages/TermsAndConditionsPage")
+);
 const SingleBookLayout = lazy(() => import("./Layout/SingleBookLayout"));
 const NewsEvents = lazy(() => import("./pages/NewsEvents"));
 const SingleArticleLayout = lazy(() => import("./Layout/SingleArticleLayout"));
@@ -39,6 +43,11 @@ const App = () => {
             <Route path="/Article/:article" element={<SingleArticleLayout />} />
             <Route path="/Story/:story" element={<SingleStoryLayout />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/privacy&policy" element={<Privacy />} />
+            <Route
+              path="/terms&conditions"
+              element={<TermsAndConditionsPage />}
+            />
           </Routes>
         </Suspense>
         <Footer />

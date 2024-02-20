@@ -21,7 +21,7 @@ const SingleBookLayout = () => {
         <title>{`${cover[0]?.title} | Book | A.M. Gautam`}</title>
         <meta name="description" content={cover[0]?.shortDescription} />
       </Helmet>
-      <SingleBookPage bookdetails={cover[0]}></SingleBookPage>;
+      <SingleBookPage bookdetails={cover[0]}></SingleBookPage>
     </>
   );
 };
